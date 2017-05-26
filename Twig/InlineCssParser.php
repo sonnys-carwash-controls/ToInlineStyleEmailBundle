@@ -13,7 +13,7 @@ namespace RobertoTru\ToInlineStyleEmailBundle\Twig;
 
 use Symfony\Component\Config\FileLocatorInterface;
 use Symfony\Component\Templating\TemplateNameParserInterface;
-use Twig_NodeInterface;
+use Twig_Node;
 use Twig_Token;
 
 class InlineCssParser extends \Twig_TokenParser 
@@ -57,7 +57,7 @@ class InlineCssParser extends \Twig_TokenParser
      *
      * @param Twig_Token $token A Twig_Token instance
      *
-     * @return Twig_NodeInterface A Twig_NodeInterface instance
+     * @return Twig_Node A Twig_Node instance
      */
     public function parse(Twig_Token $token)
     {
